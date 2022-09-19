@@ -25,6 +25,7 @@ Hacer una clase que contenga todos los poderes de los Item
     {
         this.NameItem = NameItem;
         this.AttackItem = AttackItem;
+        this.DefenseItem = 0;
     }
 
     
