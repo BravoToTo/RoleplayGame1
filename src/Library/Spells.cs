@@ -1,16 +1,11 @@
 namespace Library;
-
 public class Spells
 {
-    public string Race;
-    public double StartAttack;
-    public double StartDefense;
-    public double HealthMulti;
-    public Spells(string race, double startAttack, double startDefense, double healthMulti)
+    public string Name;
+    public int Power;
+    public Spells(string name, int power)
     {
-        this.Race = race;
-        this.StartAttack = startAttack;
-        this.StartDefense = startDefense;
-        this.HealthMulti = healthMulti;
+        this.Name = name;
+        this.Power = power;
     }
 }
