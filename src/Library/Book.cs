@@ -1,27 +1,35 @@
+using System;
+using System.Collections;
+
 namespace Library;
+
 
  
     
-public class Book : Spell
+public class Book 
 {
     public string NameBook;
-    public string[] Spells; 
+    public ArrayList Spells = new ArrayList(); 
 
     
 
-    public Book (string NameBook , Spell spells) // heredar la clase Spell
+    public Book (string NameBook) 
     {
         this.NameBook = NameBook;
-        this.Spells = spells;
     }
 
-    public void addSpell (Spell spell)  
+// Metodo para agregar hechizos.
+    public void addSpell (Spells spell)   
     {
-        foreach (string phrase in spell)
-        {
-            Spells.Add(phrase);
-        }
+            
+            Spells.Add(spell);
 
     }
     
+    // Para sacar hechizos
+    public void RemoveSpell (Spells spell)
+    {
+        Spells.Remove(spell);
+    }
+
 }

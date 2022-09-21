@@ -32,7 +32,7 @@ public class Character
         double attack = 0;
         foreach (Item item in Inventory)
         {
-            attack += item.Attack;
+            attack += item.AttackItem;
         }
         return attack+Type.Attack;
     }
@@ -41,7 +41,7 @@ public class Character
         double defense = 0;
         foreach (Item item in Inventory)
         {
-            defense += item.Defense;
+            defense += item.DefenseItem;
         }
         return defense+Type.Defense;
     }
