@@ -1,5 +1,7 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
+
 
 namespace Library;
 
@@ -9,7 +11,7 @@ public class Character
     private double Init_Health;
     public double Health;
     public Race Type;
-    public ArrayList Inventory = new ArrayList();
+    private List<IItem> Inventory= new List<IItem>();
 
     public Character(string name, Race race)
     {
@@ -19,29 +21,29 @@ public class Character
         this.Init_Health = race.Health;
     }
 
-    public void addItem(Item item)
+    public void addItem(IItem item)
     {
         Inventory.Add(item);
     }
-    public void removeItem(Item item)
+    public void removeItem(IItem item)
     {
         Inventory.Remove(item);
     }
     public double getAttack()
     {
         double attack = 0;
-        foreach (Item item in Inventory)
+        foreach (IItem item in Inventory)
         {
-            attack += item.AttackItem;
+            attack += item.AttackValue;
         }
         return attack+Type.Attack;
     }
     public double getDefense()
     {
         double defense = 0;
-        foreach (Item item in Inventory)
+        foreach (IItem item in Inventory)
         {
-            defense += item.DefenseItem;
+            defense += item.DefenseValue;
         }
         return defense+Type.Defense;
     }

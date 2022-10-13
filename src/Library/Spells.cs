@@ -2,10 +2,12 @@ namespace Library;
 public class Spells
 {
     public string Name;
-    public int Power;
-    public Spells(string name, int power)
+    public int Attack;
+    public int Defense;
+    public Spells(string name, int attack, int defense)
     {
         this.Name = name;
-        this.Power = power;
+        this.Attack = attack;
+        this.Defense = defense;
     }
 }
