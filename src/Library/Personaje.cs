@@ -10,7 +10,8 @@ public class Character
     public double Health;
     public Race Type;
     public ArrayList Inventory = new ArrayList();
-
+    public AttackItem Weapon;
+    public DefenseItem Armor;
     public Character(string name, Race race)
     {
         this.Name = name;
@@ -18,7 +19,14 @@ public class Character
         this.Health = race.Health;
         this.Init_Health = race.Health;
     }
-
+    public void equipWeapon(AttackItem item)
+    {
+        this.Weapon = item;
+    }
+    public void equipArmor(DefenseItem item)
+    {
+        this.Armor = item;
+    }
     public void addItem(Item item)
     {
         Inventory.Add(item);

@@ -2,34 +2,25 @@ namespace Library;
 
 
 
-
-public class Item  
-/*
-Hacer una clase que contenga todos los poderes de los Item
-
-*/
+interface Item
 {
-    public string NameItem;
-    public double AttackItem {get; set;}
-    public double DefenseItem {get; set;}
-
-    public  Item (string NameItem , double AttackItem , double DefenseItem)
-    {
-        this.NameItem = NameItem;
-        this.AttackItem = AttackItem;
-        this. DefenseItem = DefenseItem;
-    }
-    /* Hacer un diccionario con todos los item para así llamarlos más fácil????*/
-    
-    public Item (string NameItem , double AttackItem)
-    {
-        this.NameItem = NameItem;
-        this.AttackItem = AttackItem;
-        this.DefenseItem = 0;
-    }
-
-    
     
 }
+public class AttackItem : Item 
+{
+    public string ItemName;
+    public double ItemAttack;
+    public double ItemDefense;
+}
 
-
+public class DefenseItem : Item 
+{
+    public string ItemName;
+    public double ItemDefense;
+}
+public class MagicItem : Item 
+{
+    public string ItemName;
+    public double ItemAttack;
+    public double ItemDefense;
+}
