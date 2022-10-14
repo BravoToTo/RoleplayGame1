@@ -11,7 +11,7 @@ public class Character
     private double Init_Health;
     public double Health;
     public Race Type;
-    private List<IItem> Inventory= new List<IItem>();
+    public List<IItem> Inventory= new List<IItem>();
 
     public Character(string name, Race race)
     {
