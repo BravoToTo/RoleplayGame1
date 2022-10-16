@@ -1,6 +1,6 @@
 namespace Library
 {
-    public class Sword:IItem,IAttack
+    public class Sword:IItem
     {
         public string NameItem{get;}
 
@@ -12,6 +12,13 @@ namespace Library
             get
             {
                 return 20;
+            } 
+        }
+        public int DefenseValue 
+        {
+            get
+            {
+                return 0;
             } 
         }
     }

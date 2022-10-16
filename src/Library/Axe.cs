@@ -1,6 +1,6 @@
 namespace Library
 {
-    public class Axe:IItem,IAttack
+    public class Axe:IItem
     {
         public string NameItem{get;}
 
@@ -12,6 +12,13 @@ namespace Library
             get
             {
                 return 25;
+            } 
+        }
+        public int DefenseValue 
+        {
+            get
+            {
+                return 0;
             } 
         }
     }

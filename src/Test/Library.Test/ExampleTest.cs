@@ -33,13 +33,13 @@ namespace Library.Tests;
             Assert.AreEqual(expected,personaje1.Health);
         }
 
-        [Test]
+        /*[Test]
         public void CorrectRace()
         {
             string expected="";
             var race1 = new Race("Reward", 100, 20, 10);
             Assert.AreEqual(expected,race1);//Hay que agregar un metodo en la clase Race,
                                             //para verificar si la raza es valida.
-        }
+        }*/
     }
 //}

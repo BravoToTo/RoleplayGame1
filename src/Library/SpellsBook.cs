@@ -1,8 +1,9 @@
-using System.Collections.Generic;
+
+ using System.Collections.Generic;
 
 namespace Library
 {
-    public class SpellsBook:IItem,IAttack,IDefense
+    public class SpellsBook:IItem
     {
         private List<Spell> book = new List<Spell>();
         public string NameItem{get;}

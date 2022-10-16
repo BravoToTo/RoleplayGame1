@@ -1,6 +1,6 @@
 namespace Library
 {
-    public interface IItem{
+    public interface IItem:IAttack,IDefense{
 
     public string NameItem{get;}
 

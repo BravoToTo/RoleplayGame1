@@ -1,6 +1,6 @@
 namespace Library
 {
-    public class Helmet:IItem,IDefense
+    public class Helmet:IItem
     {
         public string NameItem{get;}
 
@@ -13,6 +13,13 @@ namespace Library
             {
                 return 18;
             }
+        }
+        public int AttackValue 
+        {
+            get
+            {
+                return 0;
+            } 
         }
     }
 }

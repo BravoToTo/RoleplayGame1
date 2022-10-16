@@ -1,6 +1,6 @@
 namespace Library
 {
-    public class Shield:IItem,IDefense
+    public class Shield:IItem
     {
         public string NameItem{get;}
 
@@ -14,5 +14,13 @@ namespace Library
                 return 14;
             }
         }
+        public int AttackValue 
+        {
+            get
+            {
+                return 0;
+            } 
+        }
+        
     }
 }
