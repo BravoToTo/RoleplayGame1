@@ -2,7 +2,7 @@ namespace Library;
 
 
 
-interface Item
+public interface Item
 {
     
 }
