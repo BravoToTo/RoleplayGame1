@@ -32,6 +32,19 @@ namespace Library.Tests;
             
             Assert.AreEqual(expected,personaje1.Health);
         }
+        [Test]
+        public void AttackingTo()
+        {
+            var race3 = new Race("Morfeo", 300, 60, 40);
+            Character personaje3= new Character("tv",race3);
+            
+            var race4 = new Race("Costelo", 220, 80, 20);
+            Character personaje4= new Character("radio",race4);
+            personaje4.Attack(personaje3);
+            double expected=300-(80-40);
+            
+            Assert.AreEqual(expected,personaje3.Health);
+        }
 
         /*[Test]
         public void CorrectRace()
