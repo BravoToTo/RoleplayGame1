@@ -1,6 +1,6 @@
 namespace Library
 {
-    public class Staff:IItem
+    public class Staff:IDefenseItem,IAttackItem
     {
         public string NameItem{get;}
 
