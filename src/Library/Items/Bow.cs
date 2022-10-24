@@ -1,6 +1,6 @@
 namespace Library
 {
-    public class Bow:IItem
+    public class Bow:IAttackItem
     {
         public string NameItem{get;}
 
@@ -14,12 +14,6 @@ namespace Library
                 return 15;
             } 
         }
-        public int DefenseValue 
-        {
-            get
-            {
-                return 0;
-            } 
-        }
+      
     }
 }

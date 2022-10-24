@@ -1,25 +1,18 @@
 namespace Library
 {
-    public class Shield:IItem
+    public class Helmet:IDefenseItem
     {
         public string NameItem{get;}
 
-        public Shield(string name){
+        public Helmet(string name){
             this.NameItem=name;
         }
         public int DefenseValue
         {
             get
             {
-                return 14;
+                return 18;
             }
-        }
-        public int AttackValue 
-        {
-            get
-            {
-                return 0;
-            } 
         }
         
     }
